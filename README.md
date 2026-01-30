@@ -1,0 +1,1 @@
+# revista de literatura que queremos desplegar para lectura directa en la web
