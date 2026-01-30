@@ -1,0 +1,48 @@
+.ediciones{
+    padding: 5rem 0;    
+}
+
+.ediciones__container{
+    display: grid;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px){
+    .ediciones__container{
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
+
+.edicion{
+    display: block;
+    background-color: var(--color-100);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem var(--color-main);
+    border-bottom: 0.5rem solid var(--color-main);
+}
+
+@media (min-width: 768px){
+    .edicion{
+        flex-grow: 1;
+        width: 30rem;
+        transition-duration: 0.5s;
+    }
+
+    .edicion:hover{
+        transform: scale(1.05);
+    }
+}
+
+.edicion__text{
+    padding: 1rem;
+}
+
+.edicion__title{
+    margin: 0;
+}
+
+.edicion__desc{
+    color: var(--color-950);
+}

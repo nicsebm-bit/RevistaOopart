@@ -1,0 +1,117 @@
+/*
+Variabbles  
+=============================*/
+@font-face {
+    font-family: "TitulosOopart";
+    src: url("/font/F25_Executive.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-100: #EBF4F6;
+    --color-200: #91E0F7;
+    --color-300: #66D3F4;
+    --color-400: #3BC7F1;
+    --color-500: #11BBEE;
+    --color-600: #0E99C4;
+    --color-700: #0B7799;
+    --color-900: #053443;
+    --color-950: #021318;
+
+    --color-main: #09637E;
+
+}
+
+
+/*
+Estilos iniciales
+=============================*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Inter", "Roboto", sans-serif;
+    font-size: 1.4rem;
+    background-color: var(--color-100);
+    
+}
+
+@media (min-width: 768px){
+    body{
+        font-size: 1.6rem;
+    }
+}
+
+
+
+h1, h2, h3{
+    font-family: "TitulosOopart", serif;
+    font-weight: 700;
+}
+
+h4, h5, h6{
+    font-family: "TitulosOopart", serif;
+    font-weight: 500;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-900);
+    font-weight: 500;
+}
+
+/*
+Utilidades
+=============================*/
+
+
+
+[class$="__container"]{
+    width: 100%;
+    max-width: 120rem;
+    padding: 1rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+[class$="__title2"]{
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 1rem;
+    
+    position: relative;
+    z-index: 2;
+
+}
+
+@media (min-width: 992px){
+    [class$="__title2"]{
+        font-size: 4.5rem;
+    }
+}
+
+[class$="__title2-color"]{
+    color: var(--color-main);
+}
+
+[class$="__desc1"]{
+    text-align: center;
+    color: var(--color-950);
+    padding: 0 1rem;
+}
