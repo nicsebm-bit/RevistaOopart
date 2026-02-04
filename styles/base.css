@@ -42,12 +42,13 @@ body {
     font-family: "Inter", "Roboto", sans-serif;
     font-size: 1.4rem;
     background-color: var(--color-100);
-    
+    padding-top: 10rem;    
 }
 
 @media (min-width: 768px){
     body{
         font-size: 1.6rem;
+        padding-top: 11rem; 
     }
 }
 

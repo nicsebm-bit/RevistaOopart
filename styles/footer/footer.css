@@ -44,7 +44,8 @@
 }
 
 .footer__logo{
-     filter: brightness(0) saturate(100%) invert(28%) sepia(63%) saturate(748%) hue-rotate(161deg) brightness(92%) contrast(94%);
+    width: 8rem;
+    filter: brightness(0) saturate(100%) invert(28%) sepia(63%) saturate(748%) hue-rotate(161deg) brightness(92%) contrast(94%);
 }
 
 .logo:hover{

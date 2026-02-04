@@ -1,35 +1,49 @@
-.navbar{
+/* navbar.css - Estilos para el navbar separado */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-200);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-
-    background-color: transparent;
-    padding: 1rem 1.5rem;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    z-index: 2;
 }
 
-.logo{
+/* Logo */
+.navbar__logo {
     width: 8rem;
     height: 8rem;
-    margin: 1rem;
+    display: flex;
     align-items: center;
     filter: brightness(0) saturate(100%) invert(6%) sepia(22%) saturate(1320%) hue-rotate(162deg) brightness(92%) contrast(95%);
     transition: 0.3s ease;
 }
 
-.logo:hover{
+.navbar__logo:hover {
     filter: brightness(0) saturate(100%) invert(28%) sepia(63%) saturate(748%) hue-rotate(161deg) brightness(92%) contrast(94%);
 }
 
-.menu-btn{
+/* Botón hamburguesa */
+.navbar__menu-btn {
     display: inline-block;
     cursor: pointer;
+    z-index: 1001;
 }
 
-.menu-btn__line{
+.menu-btn__line {
     display: block;
     width: 2rem;
     height: 0.3rem;
@@ -39,11 +53,12 @@
     transition: 0.3s ease;
 }
 
-.menu{
+/* Menú */
+.navbar__menu {
     display: none;
 }
 
-#menu-toggle:checked~.menu{
+#menu-toggle:checked ~ .navbar__menu {
     display: grid;
     gap: 0.5rem;
     align-content: start;
@@ -53,131 +68,128 @@
     left: 0;
     width: 100%;
     padding: 2rem 1rem;
-    height: 89vh;
+    height: calc(100vh - 10rem);
     box-shadow: 0 0 0.5rem var(--color-500);
 }
 
-@media (min-width: 576px){
-    .menu{
+@media (min-width: 576px) {
+    .navbar__menu {
         all: unset;
         display: flex;
+        gap: 2rem;
     }
 
-    .menu-btn{
+    .navbar__menu-btn {
         display: none;
     }
 }
 
-.menu__link{
+/* Enlaces del menú */
+.menu__link {
     display: block;
     color: var(--color-950);
     padding: 1rem;
     border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
 }
 
-.menu__link:hover{
+.menu__link:hover {
     color: var(--color-main);
     background-color: var(--color-950);
 }
 
-@media (min-width: 576px){
-    .menu__link{
+@media (min-width: 576px) {
+    .menu__link {
         color: var(--color-950);
+        padding: 0.5rem 1rem;
     }
 
-    .menu__link:hover{
+    .menu__link:hover {
         background-color: var(--color-500);
         color: var(--color-950);
+        transform: translateY(-2px);
     }
 }
 
-#menu-toggle:checked+.menu-btn .menu-btn__line--1{
+/* Animaciones del botón hamburguesa */
+#menu-toggle:checked + .navbar__menu-btn .menu-btn__line--1 {
     animation: line1 0.3s forwards;
 }
 
-#menu-toggle:checked+.menu-btn .menu-btn__line--2{
+#menu-toggle:checked + .navbar__menu-btn .menu-btn__line--2 {
     animation: line2 0.3s forwards;
 }
 
-#menu-toggle:checked+.menu-btn .menu-btn__line--3{
+#menu-toggle:checked + .navbar__menu-btn .menu-btn__line--3 {
     animation: line3 0.3s forwards;
 }
 
-@keyframes line1 {
-    0%{
-        transform: translateY(0) rotate(0);
-    }    
+#menu-toggle:not(:checked) + .navbar__menu-btn .menu-btn__line--1 {
+    animation: line1-r 0.3s forwards;
+}
 
-    50%{
+#menu-toggle:not(:checked) + .navbar__menu-btn .menu-btn__line--3 {
+    animation: line3-r 0.3s forwards;
+}
+
+@keyframes line1 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
         transform: translateY(8px) rotate(0);
     }
-
-    100%{
+    100% {
         transform: translateY(8px) rotate(45deg);
     }
 }
 
 @keyframes line2 {
-    0%{
+    0% {
         opacity: 1;
-    }    
-
-    50%{
+    }
+    50% {
         opacity: 0.5;
     }
-
-    100%{
+    100% {
         opacity: 0;
     }
 }
 
 @keyframes line3 {
-    0%{
+    0% {
         transform: translateY(0) rotate(0);
-    }    
-
-    50%{
+    }
+    50% {
         transform: translateY(-8px) rotate(0);
     }
-
-    100%{
+    100% {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
 
-#menu-toggle:not(:checked)+.menu-btn .menu-btn__line--1{
-    animation: line1-r 0.3s forwards;
-}
-
-#menu-toggle:not(:checked)+.menu-btn .menu-btn__line--3{
-    animation: line3-r 0.3s forwards;
-}
-
 @keyframes line1-r {
-    0%{
-        transform: translateY(8) rotate(45deg);
-    }    
-
-    50%{
+    0% {
+        transform: translateY(8px) rotate(45deg);
+    }
+    50% {
         transform: translateY(8px) rotate(0);
     }
-
-    100%{
+    100% {
         transform: translateY(0) rotate(0);
     }
 }
 
 @keyframes line3-r {
-    0%{
-        transform: translateY(-8) rotate(-45deg);
-    }    
-
-    50%{
+    0% {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    50% {
         transform: translateY(-8px) rotate(0);
     }
-
-    100%{
+    100% {
         transform: translateY(0) rotate(0);
     }
 }
-

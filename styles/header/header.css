@@ -1,12 +1,13 @@
-.header{
+.header {
     background-image: url(/images/image_1_1769802031247.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right;
+    background-position: center center;
     margin-bottom: 3rem;
     position: relative;
+    padding-top: 11rem; /* Espacio para el navbar fijo */
     padding-bottom: 3rem;
-    
+    min-height: 60rem;
 }
 
 .header::before {
@@ -16,24 +17,20 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    background-color: rgba(255, 255, 255, );
-
+    background-color: rgba(255, 255, 255, 0.1);
     z-index: 1;
 }
 
-
-@media (min-width: 576px){
-    header{
+@media (min-width: 576px) {
+    .header {
         height: 70rem;
-        background-position: center center;
-        
+        padding-top: 11rem; /* Ajusta según la altura del navbar */
     }
 }
 
-@media (min-width: 1200px){
-    .header{
+@media (min-width: 1200px) {
+    .header {
         height: 100vh;
-        
+        padding-top: 11rem; /* Ajusta según la altura del navbar */
     }
 }

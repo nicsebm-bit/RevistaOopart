@@ -6,6 +6,7 @@
     display: grid;
     gap: 2rem;
     margin-top: 4rem;
+    z-index: inherit;
 }
 
 @media (min-width: 768px){
