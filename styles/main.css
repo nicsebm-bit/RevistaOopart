@@ -64,3 +64,112 @@
         border-radius: 0;
     }
 }
+
+
+
+/* ========== NUEVA EDICION ========== */
+.nueva-edicion {
+    padding: 5rem 0;
+    background-color: var(--color-100);
+}
+
+.nueva-edicion__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nueva-edicion__card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-100);
+    border-radius: 0.7rem;
+    overflow: hidden;
+    box-shadow: 0 0 0.3rem var(--color-main);
+    border-bottom: 0.5rem solid var(--color-main);
+    max-width: 60rem;
+    width: 100%;
+}
+
+.nueva-edicion__image {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    display: block;
+}
+
+.nueva-edicion__text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.nueva-edicion__label {
+    font-family: "TitulosOopart", serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-main);
+    font-weight: 600;
+    margin: 0;
+}
+
+.nueva-edicion__name {
+    font-family: "TitulosOopart", serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-900);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.nueva-edicion__desc {
+    font-size: 1.4rem;
+    color: var(--color-950);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.nueva-edicion__tag {
+    display: inline-block;
+    background-color: var(--color-200);
+    color: var(--color-900);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.7rem;
+    width: fit-content;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .nueva-edicion__card {
+        flex-direction: row;
+        max-width: 90rem;
+        transition-duration: 0.5s;
+    }
+
+    .nueva-edicion__card:hover {
+        transform: scale(1.02);
+    }
+
+    .nueva-edicion__image {
+        width: 25rem;
+        min-width: 25rem;
+        height: auto;
+    }
+
+    .nueva-edicion__text {
+        padding: 2rem;
+    }
+
+    .nueva-edicion__name {
+        font-size: 3rem;
+    }
+
+    .nueva-edicion__desc {
+        font-size: 1.6rem;
+    }
+}

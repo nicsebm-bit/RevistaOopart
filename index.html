@@ -33,22 +33,20 @@
             </label>
 
             <div class="navbar__menu menu">
-                <a href="" class="menu__link">Inicio</a>
-                <a href="" class="menu__link">Ediciones</a>
-                <a href="" class="menu__link">Contacto</a>
+                <a href="#inicio" class="menu__link">Inicio</a>
+                <a href="#ediciones" class="menu__link">Ediciones</a>
+                <a href="#contacto" class="menu__link">Contacto</a>
             </div>
         </div>
     </nav>
 
 
-    <header class="header">
+    <header class="header" id="inicio">
         <div class="header__container">
             <section class="header__intro intro">
                 <h1 class="intro__title">Revista Oopart - Hablamos de lo que no sabemos </h1>
                 <p class="intro__desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repellendus quisquam. Repellendus ex
-                    perspiciatis earum distinctio omnis, optio perferendis modi pariatur maiores? Labore cupiditate aut
-                    odio dolores blanditiis, unde ad.
+                    Oopart es una revista hecha de preguntas sin respuesta y respuestas sin dueño. Un lugar donde la cultura, la literatura, la curiosidad y la crítica no coexisten por accidente, sino porque se necesitan. Aquí, personas con muchos años encima —y demasiadas lecturas pendientes— se sientan a crear cosas nuevas desde lo que ya saben, lo que ya vivieron y lo que todavía no entienden. No somos un archivo del pasado. Somos el intento obstinado de hacer algo con él.
                 </p>
 
                 <div class="intro__features features">
@@ -68,28 +66,45 @@
                     </p>
                 </div>
 
-                <div class="intro__actions actions">
+                <!--<div class="intro__actions actions">
                     <a href="" class="actions__start-btn">Empezar ahora</a>
                     <button class="actions__play-btn play-btn">
                         <i class="bx bx-play-circle play-btn__icon"></i>
                         <span class="play-btn__text">Ver video</span>
                     </button>
-                </div>
+                </div> -->
             </section>
         </div>
     </header>
 
-    <section class="ediciones">
+    <section class="nueva-edicion">
+    <div class="nueva-edicion__container">
+        <div class="nueva-edicion__badge">✦ Nueva Edición</div>
+        <h2 class="nueva-edicion__title">Lo último de <span class="nueva-edicion__title-color">Oopart</span></h2>
+
+        <div class="nueva-edicion__card">
+            <img src="images/portadas/Revista Oopart edición 11 IArama.jpg" alt="portada edicion 11"
+                class="nueva-edicion__image">
+            <div class="nueva-edicion__text">
+                <span class="nueva-edicion__label">Edición No 11</span>
+                <h3 class="nueva-edicion__name">IArama</h3>
+                                
+                <a href="#edicion-11" class="nueva-edicion__tag">
+                    🚀 Ver edición 📖
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="ediciones" id="ediciones">
         <h2 class="ediciones__title2">¡Nuestras
             <span class="ediciones__title2-color">Ediciones</span>!
         </h2>
 
         <p class="ediciones__desc1">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem cum eveniet quia, consequuntur repellat
-            eius officia? Nisi cumque dignissimos possimus commodi tempora deleniti atque, sapiente porro vel
-            perspiciatis quae unde? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, architecto
-            delectus neque aliquid quod ipsum ab magni, doloribus laborum tempore quas in. Ut, cumque saepe at ea
-            aliquam nisi dolore.
+            Desde el encierro hasta la inteligencia artificial, Oopart ha recorrido once ediciones sin un mapa fijo, pero con una brújula clara: ir hacia lo que incomoda, lo que no termina de entenderse, lo que la cultura oficial prefiere dejar quieto. Hemos hablado de encierro y creación, de memoria y violencia, de tradición y nostalgia, de identidad latinoamericana y de las máscaras que nos ponemos frente a la pantalla. Hemos cuestionado el poder, la verdad, el arte como refugio y el arte como confrontación. Y ahora, con IArama, nos preguntamos si la inteligencia que estamos construyendo sabe algo que nosotros todavía no queremos admitir.
+            Esto no es una revista de expertos. Es el cuaderno de apuntes de personas que leen demasiado, piensan en voz alta y se niegan a creer que ya no hay nada nuevo que decir. Si llegaste hasta aquí, probablemente seas uno de los nuestros. Quédate y lee.
         </p>
 
         <div class="ediciones__container">
@@ -99,7 +114,12 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 1: Encierro</h3>
                     <p class="edicion__desc">
-                        Esta primera edición reflexiona sobre el encierro y la creación artística, para explorar la tensión entre vida y ficción. Reflexiona sobre el mito del artista atormentado con ecos de Fiodor Dostoievski y Sylvia Plath. Cuestiona la cultura digital, la inmediatez y la cancelación como nuevas formas de encierro. Incluye una lectura del videojuego What Remains of Edith Finch, donde la muerte se convierte en experiencia narrativa. Con resonancias de Jorge Luis Borges, conecta esta reflexión con la realidad colombiana. 
+                        Esta primera edición reflexiona sobre el encierro y la creación artística, para explorar la
+                        tensión entre vida y ficción. Reflexiona sobre el mito del artista atormentado con ecos de
+                        Fiodor Dostoievski y Sylvia Plath. Cuestiona la cultura digital, la inmediatez y la cancelación
+                        como nuevas formas de encierro. Incluye una lectura del videojuego What Remains of Edith Finch,
+                        donde la muerte se convierte en experiencia narrativa. Con resonancias de Jorge Luis Borges,
+                        conecta esta reflexión con la realidad colombiana.
                     </p>
                 </div>
                 <a href="#" class="leer-pdf" data-pdf="/pdf-flip/web/libros/Revista Oopart Edicion 1 Encierro.pdf">
@@ -113,7 +133,12 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 2: Nación</h3>
                     <p class="edicion__desc">
-                        La segunda edición profundiza en la relación entre memoria, identidad y escritura como acto de resistencia. Los textos exploran la fragilidad del recuerdo y su transformación en relato, entre la intimidad y la historia colectiva. Se reflexiona sobre la violencia simbólica y material que atraviesa el contexto colombiano. La literatura aparece como espacio de confrontación ética y estética frente al olvido. La figura del autor se cuestiona: ¿testigo, cómplice o inventor de realidades?
+                        La segunda edición profundiza en la relación entre memoria, identidad y escritura como acto de
+                        resistencia. Los textos exploran la fragilidad del recuerdo y su transformación en relato, entre
+                        la intimidad y la historia colectiva. Se reflexiona sobre la violencia simbólica y material que
+                        atraviesa el contexto colombiano. La literatura aparece como espacio de confrontación ética y
+                        estética frente al olvido. La figura del autor se cuestiona: ¿testigo, cómplice o inventor de
+                        realidades?
                         La edición combina crítica cultural con aproximaciones más personales y confesionales.
 
                     </p>
@@ -131,7 +156,10 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 3: Rutina</h3>
                     <p class="edicion__desc">
-                        Esta tercera edición centra su mirada en la crisis como punto de quiebre creativo y político. Se examina la escritura como forma de resistencia frente al ruido mediático. Aparecen reflexiones sobre el poder, la censura y la autocensura en el ámbito cultural. El arte se entiende no como refugio, sino como confrontación.
+                        Esta tercera edición centra su mirada en la crisis como punto de quiebre creativo y político. Se
+                        examina la escritura como forma de resistencia frente al ruido mediático. Aparecen reflexiones
+                        sobre el poder, la censura y la autocensura en el ámbito cultural. El arte se entiende no como
+                        refugio, sino como confrontación.
                     </p>
                 </div>
                 <div class="edicion__footer">
@@ -147,7 +175,10 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 4: Terror</h3>
                     <p class="edicion__desc">
-                        Esta cuarta edición se concentra en las tensiones entre cuerpo, poder y representación, los textos indagan en las formas contemporáneas de control social y exposición pública. La escritura aparece como espacio de denuncia y, al mismo tiempo, de vulnerabilidad; hay una mirada crítica hacia los discursos oficiales y las narrativas dominantes.
+                        Esta cuarta edición se concentra en las tensiones entre cuerpo, poder y representación, los
+                        textos indagan en las formas contemporáneas de control social y exposición pública. La escritura
+                        aparece como espacio de denuncia y, al mismo tiempo, de vulnerabilidad; hay una mirada crítica
+                        hacia los discursos oficiales y las narrativas dominantes.
                     </p>
                 </div>
                 <div class="edicion__footer">
@@ -163,7 +194,11 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 5: Internet</h3>
                     <p class="edicion__desc">
-                        Esta quinta edición desplaza la reflexión hacia los límites entre ficción y realidad. Se examinan las máscaras sociales y las identidades fragmentadas del presente; hay una preocupación por el espectáculo, la simulación y la construcción del yo. Se intensifica el tono irónico y autocrítico frente al mundo cultural. El lenguaje se presenta como herramienta de poder, pero también de emancipación.
+                        Esta quinta edición desplaza la reflexión hacia los límites entre ficción y realidad. Se
+                        examinan las máscaras sociales y las identidades fragmentadas del presente; hay una preocupación
+                        por el espectáculo, la simulación y la construcción del yo. Se intensifica el tono irónico y
+                        autocrítico frente al mundo cultural. El lenguaje se presenta como herramienta de poder, pero
+                        también de emancipación.
                     </p>
                 </div>
                 <div class="edicion__footer">
@@ -179,7 +214,13 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 6: Tradición</h3>
                     <p class="edicion__desc">
-                        La sexta entrega explora la nostalgia y los recuerdos que marcan el cierre del año 2020. A través de una cuidada selección de textos y artes, la entrega reflexiona sobre cómo las personas conmemoran lo pasado y lo que vendrá. El contenido varía desde relatos personales sobre la infancia y la música de los 90, hasta análisis cinematográficos de obras como Tokyo Godfathers. También destaca un ensayo profundo que vincula la novela La Peste de Albert Camus con la crisis global del Covid-19. La obra aborda la pérdida de la inocencia, el valor de la amistad y la reinvención de las costumbres en tiempos de incertidumbre. 
+                        La sexta entrega explora la nostalgia y los recuerdos que marcan el cierre del año 2020. A
+                        través de una cuidada selección de textos y artes, la entrega reflexiona sobre cómo las personas
+                        conmemoran lo pasado y lo que vendrá. El contenido varía desde relatos personales sobre la
+                        infancia y la música de los 90, hasta análisis cinematográficos de obras como Tokyo Godfathers.
+                        También destaca un ensayo profundo que vincula la novela La Peste de Albert Camus con la crisis
+                        global del Covid-19. La obra aborda la pérdida de la inocencia, el valor de la amistad y la
+                        reinvención de las costumbres en tiempos de incertidumbre.
                     </p>
                 </div>
                 <div class="edicion__footer">
@@ -195,11 +236,19 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 7: Papel Mojado</h3>
                     <p class="edicion__desc">
-                        La séptima edición de la Revista Oopart, bajo el concepto de "Papel Mojado", presenta una exploración literaria que navega entre la introspección clásica y la narrativa urbana contemporánea. Con un diseño editorial sobrio y una selección de escritores como Nelson Martínez y Nicolás Maya, la obra mantiene un tono reflexivo. Los textos transitan desde la filosofía budista y el panteísmo hasta la crudeza de la inseguridad ciudadana. Se percibe una constante invitación a valorar el arte como un refugio ante la "violenta indiferencia" del universo. La edición logra equilibrar el análisis académico con la narrativa de ficción, consolidando la identidad de la revista. 
+                        La séptima edición de la Revista Oopart, bajo el concepto de "Papel Mojado", presenta una
+                        exploración literaria que navega entre la introspección clásica y la narrativa urbana
+                        contemporánea. Con un diseño editorial sobrio y una selección de escritores como Nelson Martínez
+                        y Nicolás Maya, la obra mantiene un tono reflexivo. Los textos transitan desde la filosofía
+                        budista y el panteísmo hasta la crudeza de la inseguridad ciudadana. Se percibe una constante
+                        invitación a valorar el arte como un refugio ante la "violenta indiferencia" del universo. La
+                        edición logra equilibrar el análisis académico con la narrativa de ficción, consolidando la
+                        identidad de la revista.
                     </p>
                 </div>
                 <div class="edicion__footer">
-                    <a href="#" class="leer-pdf" data-pdf="/pdf-flip/web/libros/Revista Oopart edicion 7 Papel Mojado.pdf">
+                    <a href="#" class="leer-pdf"
+                        data-pdf="/pdf-flip/web/libros/Revista Oopart edicion 7 Papel Mojado.pdf">
                         Leer 📖
                     </a>
                 </div>
@@ -211,7 +260,15 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 8: Artificio</h3>
                     <p class="edicion__desc">
-                        La octava edición propone una profunda reflexión sobre la construcción de la verdad y la manipulación de la realidad en la cultura contemporánea. La edición también explora el papel del arte como herramienta de protesta, analizando el impacto del muralismo en México y Colombia, así como la subversión del graffiti en la obra de Pérez-Reverte. Otros textos abordan la sátira del liberalismo, la pasión del fútbol como tradición familiar y un análisis cinematográfico de la película No de Pablo Larraín. Con la participación de autores como Nicolás Moya y Paola Clavijo, la revista equilibra la opinión política con la narrativa transmedia. Además, se destaca la expansión del proyecto hacia contenidos en YouTube y podcasts, fortaleciendo su comunidad digital. 
+                        La octava edición propone una profunda reflexión sobre la construcción de la verdad y la
+                        manipulación de la realidad en la cultura contemporánea. La edición también explora el papel del
+                        arte como herramienta de protesta, analizando el impacto del muralismo en México y Colombia, así
+                        como la subversión del graffiti en la obra de Pérez-Reverte. Otros textos abordan la sátira del
+                        liberalismo, la pasión del fútbol como tradición familiar y un análisis cinematográfico de la
+                        película No de Pablo Larraín. Con la participación de autores como Nicolás Moya y Paola Clavijo,
+                        la revista equilibra la opinión política con la narrativa transmedia. Además, se destaca la
+                        expansión del proyecto hacia contenidos en YouTube y podcasts, fortaleciendo su comunidad
+                        digital.
                     </p>
                 </div>
                 <div class="edicion__footer">
@@ -227,7 +284,14 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 9: Profecías Latinoamericanas</h3>
                     <p class="edicion__desc">
-                        La novena entrega de la Revista Oopart, "Profecías latinoamericanas", se sumerge en la identidad y el futuro del continente a través de una lente crítica y artística. La edición destaca por un análisis profundo sobre la gestión cultural en las periferias, tomando como caso de estudio a Nezahualcóyotl en México y su resistencia a través del arte autogestionado. Los textos exploran la tensión entre la "alta cultura" de los museos y las expresiones populares que surgen en los márgenes urbanos. La narrativa transita entre la sociología, la filosofía del arte y la crónica local, buscando entender qué significa ser latinoamericano hoy. El diseño mantiene su estética característica, combinando imágenes potentes con una tipografía que invita a la lectura pausada. 
+                        La novena entrega de la Revista Oopart, "Profecías latinoamericanas", se sumerge en la identidad
+                        y el futuro del continente a través de una lente crítica y artística. La edición destaca por un
+                        análisis profundo sobre la gestión cultural en las periferias, tomando como caso de estudio a
+                        Nezahualcóyotl en México y su resistencia a través del arte autogestionado. Los textos exploran
+                        la tensión entre la "alta cultura" de los museos y las expresiones populares que surgen en los
+                        márgenes urbanos. La narrativa transita entre la sociología, la filosofía del arte y la crónica
+                        local, buscando entender qué significa ser latinoamericano hoy. El diseño mantiene su estética
+                        característica, combinando imágenes potentes con una tipografía que invita a la lectura pausada.
                     </p>
                 </div>
                 <div class="edicion__footer">
@@ -244,11 +308,43 @@
                 <div class="edicion__text">
                     <h3 class="edicion__title">Edición No 10: regreso</h3>
                     <p class="edicion__desc">
-                        La décima edición reflexiona sobre el retorno a la creación tras las pausas impuestas por la vida laboral y las obligaciones cotidianas. El editorial establece un tono honesto, describiendo la revista como un "diario" y un refugio escrito en los tiempos robados a la rutina, inspirándose en la buena fe de Montaigne. A diferencia de números anteriores más ensayísticos, esta entrega parece volcarse hacia la expresión plástica y el portafolio visual como forma de resistencia creativa. Se percibe una madurez estética que celebra la imperfección y el valor de hacer arte "a pesar de todo". Es un número que invita a retomar los proyectos abandonados y a encontrar belleza en lo cotidiano. 
+                        La décima edición reflexiona sobre el retorno a la creación tras las pausas impuestas por la
+                        vida laboral y las obligaciones cotidianas. El editorial establece un tono honesto, describiendo
+                        la revista como un "diario" y un refugio escrito en los tiempos robados a la rutina,
+                        inspirándose en la buena fe de Montaigne. A diferencia de números anteriores más ensayísticos,
+                        esta entrega parece volcarse hacia la expresión plástica y el portafolio visual como forma de
+                        resistencia creativa. Se percibe una madurez estética que celebra la imperfección y el valor de
+                        hacer arte "a pesar de todo". Es un número que invita a retomar los proyectos abandonados y a
+                        encontrar belleza en lo cotidiano.
                     </p>
                 </div>
                 <div class="edicion__footer">
-                    <a href="#" class="leer-pdf" data-pdf="/pdf-flip/web/libros/Revista Oppart Edición 10  regreso enero 2022.pdf">
+                    <a href="#" class="leer-pdf"
+                        data-pdf="/pdf-flip/web/libros/Revista Oppart Edición 10  regreso enero 2022.pdf">
+                        Leer 📖
+                    </a>
+                </div>
+            </div>
+            <div class="ediciones__edicion edicion" id="edicion-11">
+                <img src="images/portadas/Revista Oopart edición 11 IArama.jpg" alt="portada11" class="edicion__image">
+                <div class="edicion__text">
+                    <h3 class="edicion__title">Edición No 11: IArama</h3>
+                    <p class="edicion__desc">
+                        La undécima edición, bautizada IArama, sitúa la inteligencia artificial como eje central de una
+                        reflexión colectiva sobre tecnología, cultura y humanidad. Los textos oscilan entre el ensayo
+                        filosófico, la ciencia ficción y la narrativa urbana, sin perder el tono crítico que caracteriza
+                        a la revista. Se cuestiona el discurso apocalíptico en torno a la AGI, se denuncia la
+                        sobreproducción de contenido vacío y la pérdida de personalidad en la era algorítmica, y se
+                        explora la sintiencia como problema ético de nuestro tiempo. La ficción especulativa aparece con
+                        fuerza: una inteligencia artificial que gobierna las lluvias de Bogotá en el año 2083 se
+                        convierte en metáfora de las tensiones entre progreso, sacrificio y justicia global. La edición
+                        también incluye narrativa cotidiana, crónica universitaria y un análisis del anime FLCL como
+                        espejo de las angustias que no entienden de edades. Un número que no teme preguntar si
+                        verdaderamente necesitamos este palo afilado que tenemos frente a nosotros.
+                    </p>
+                </div>
+                <div class="edicion__footer">
+                    <a href="#" class="leer-pdf" data-pdf="/pdf-flip/web/libros/Revista Oopart edición 11 IArama.pdf">
                         Leer 📖
                     </a>
                 </div>
@@ -256,16 +352,14 @@
         </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="contacto">
         <div class="footer__container">
             <div class="footer__brand">
                 <a href="" class="footer__logo logo">
                     <img src="images/LogoOopart-Photoroom(1).png" alt="logo oopart">
                 </a>
                 <p class="footer__slogan">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem odio consequuntur sequi repudiandae
-                    id cum nemo aliquam nulla sit dicta, obcaecati nisi neque cumque suscipit magni facere odit maiores
-                    repellendus.
+                    Oopart — Hablamos de lo que no sabemos, escribimos lo que no cabe.
                 </p>
                 <div class="footer__social">
                     <a href="" class="footer__social-link">
